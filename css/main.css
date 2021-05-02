@@ -8,6 +8,7 @@ html {
 body {
 	min-height: 100%;
 	position: relative;
+	background: #fbf9fb;
 }
 
 
@@ -25,9 +26,6 @@ main {
 	padding-bottom: 150px;
 }
 
-.top-section {
-	background: #fbf9fb;
-}
 
 .top-section-name,
 .offer-header,
@@ -108,7 +106,6 @@ ul {
 
 
 
-
 @media only screen and (min-width: 300px) {
 
 	.header-icon {
@@ -119,6 +116,11 @@ ul {
 
 
 @media only screen and (min-width: 768px) {
+
+	.top-section > img[src] {
+		width: 75% !important;
+	}
+
 
 	.top-section-name > h1 {
 		font-size: 3rem;
