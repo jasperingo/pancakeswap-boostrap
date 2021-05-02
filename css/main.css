@@ -1,0 +1,151 @@
+
+
+html {
+	height: 100%;
+	min-width: 250px;
+	background: red;
+}
+
+body {
+	min-height: 100%;
+	position: relative;
+}
+
+
+.main-link[href] {
+	border-radius: 50px;
+	background: #1FC6D5;
+	border: 1px solid #1FC6D5;
+}
+
+.header-icon {
+	width: 40px;
+}
+
+main {
+	padding-bottom: 150px;
+}
+
+.top-section {
+	background: #fbf9fb;
+}
+
+.top-section-name,
+.offer-header,
+.modal-content > div > h3  {
+	color: #442a7b;
+}
+
+.top-section-name > h1 {
+	font-size: 2rem;
+}
+
+.top-section-name > h2 {
+	font-size: 1rem;
+}
+
+
+.bottom-section > ul > li {
+	border-radius: 20px;
+}
+
+footer {
+	bottom: 0;
+	width: 100%;
+	position: absolute;
+	background: #1FC6D5;
+}
+
+.footer-circle-box {
+	left: 5%;
+	top: -40%;
+	position: absolute;
+}
+
+.footer-circle {
+	height: 100px;
+	width: 100px;
+	background: #1FC6D5;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.footer-circle.small-circle {
+	height: 70px;
+	width: 70px;
+}
+
+
+ul {
+	list-style: none;
+}
+
+.modal-btn {
+	color: #1FC6D5;
+	font-size: x-large;
+	background: #eff4f5;
+	border-color: #eff4f5;
+}
+
+.modal-btn > div > img {
+	width: 60px;
+}
+
+.form-group > label {
+	top: -10%;
+	position: absolute;
+}
+
+.form-control {
+	background: #F3F3F3;
+}
+
+.form-btn {
+	background: #1FC6D5;
+	border: 1px solid #1FC6D5;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 300px) {
+
+	.header-icon {
+		width: 50px;
+	}
+
+}
+
+
+@media only screen and (min-width: 768px) {
+
+	.top-section-name > h1 {
+		font-size: 3rem;
+	}
+
+	.bottom-section > ul > li {
+		width: 50%;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

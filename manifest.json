@@ -1,0 +1,17 @@
+
+{
+  	"name": "PancakeSwap",
+  	"short_name": "PancakeSwap",
+  	"start_url": ".",
+  	"display": "standalone",
+  	"background_color": "#fff",
+  	"description": "The #1 AMM and yield farm on Binance Smart Chain",
+  	"icons": [{
+   		"src": "images/header-icon.png",
+    	"sizes": "48x48",
+    	"type": "image/png"
+  	}]
+}
+
+
+
