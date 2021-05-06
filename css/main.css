@@ -88,20 +88,21 @@ ul {
 	width: 60px;
 }
 
-.form-group > label {
-	top: -10%;
-	position: absolute;
-}
-
 .form-control {
+	color: #000000;
+	font-weight: bold;
 	background: #F3F3F3;
 }
 
-.form-btn {
+.form-btn,
+.nav-pills a.nav-link.active {
 	background: #1FC6D5;
 	border: 1px solid #1FC6D5;
 }
 
+.nav-pills a {
+	color: #1FC6D5;
+}
 
 
 

